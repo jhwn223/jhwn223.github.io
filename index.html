@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jihwan Kim</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Spline+Sans+Mono:wght@400;500&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f4f1ea;
+      --ink: #1c1a17;
+      --muted: #6b665c;
+      --line: #d8d2c4;
+      --accent: #b5432a;
+      --display: "Fraunces", Georgia, serif;
+      --body: "Public Sans", sans-serif;
+      --mono: "Spline Sans Mono", monospace;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--body);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      background-image: radial-gradient(var(--line) 0.5px, transparent 0.5px);
+      background-size: 22px 22px;
+    }
+
+    .wrap { max-width: 720px; margin: 0 auto; padding: 0 28px; }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 28px 0;
+      font-family: var(--mono);
+      font-size: 13px;
+      letter-spacing: 0.02em;
+    }
+    .topbar .site { color: var(--ink); font-weight: 500; }
+    .topbar nav a {
+      color: var(--muted);
+      text-decoration: none;
+      margin-left: 20px;
+      transition: color 0.2s;
+    }
+    .topbar nav a:hover { color: var(--accent); }
+
+    .hero {
+      padding: 80px 0 64px;
+      animation: rise 0.9s ease both;
+    }
+    .eyebrow {
+      font-family: var(--mono);
+      font-size: 13px;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 22px;
+    }
+    .hero h1 {
+      font-family: var(--display);
+      font-weight: 500;
+      font-size: clamp(40px, 9vw, 76px);
+      line-height: 1.02;
+      letter-spacing: -0.02em;
+      margin-bottom: 28px;
+    }
+    .hero h1 em {
+      font-style: italic;
+      color: var(--accent);
+    }
+    .hero .bio {
+      font-size: clamp(17px, 2.4vw, 20px);
+      color: var(--muted);
+      max-width: 56ch;
+    }
+    .hero .bio strong { color: var(--ink); font-weight: 500; }
+
+    section { padding: 56px 0; border-top: 1px solid var(--line); }
+    .section-head {
+      display: flex;
+      align-items: baseline;
+      gap: 14px;
+      margin-bottom: 36px;
+    }
+    .section-head .num {
+      font-family: var(--mono);
+      font-size: 13px;
+      color: var(--accent);
+    }
+    .section-head h2 {
+      font-family: var(--display);
+      font-weight: 500;
+      font-size: clamp(26px, 5vw, 36px);
+      letter-spacing: -0.01em;
+    }
+
+    .empty {
+      border: 1px dashed var(--line);
+      border-radius: 14px;
+      padding: 56px 28px;
+      text-align: center;
+      color: var(--muted);
+      font-family: var(--mono);
+      font-size: 14px;
+    }
+    .empty .dot {
+      display: inline-block;
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+      margin-bottom: 16px;
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    footer {
+      padding: 48px 0 64px;
+      border-top: 1px solid var(--line);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-family: var(--mono);
+      font-size: 13px;
+      color: var(--muted);
+    }
+    footer a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--line); padding-bottom: 1px; transition: border-color 0.2s; }
+    footer a:hover { border-color: var(--accent); }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50%      { opacity: 0.4; transform: scale(0.8); }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <div class="topbar">
+      <span class="site">jhwn223</span>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+      </nav>
+    </div>
+
+    <header class="hero" id="about">
+      <p class="eyebrow">Chung-Ang University &middot; Software</p>
+      <h1>Hello, I&rsquo;m<br><em>Jihwan Kim</em></h1>
+      <p class="bio">
+        a Software student at Chung-Ang University. I&rsquo;m interested in
+        <strong>AI</strong>, <strong>Data Science</strong>, and software development.
+        I&rsquo;m currently building my foundation in computer science and growing as a
+        developer who solves problems with reliable software.
+      </p>
+    </header>
+
+    <section id="projects">
+      <div class="section-head">
+        <span class="num">01</span>
+        <h2>Projects</h2>
+      </div>
+      <div class="empty">
+        <span class="dot"></span><br />
+        Coming soon
+      </div>
+    </section>
+
+    <footer>
+      <span>&copy; 2026 Jihwan Kim</span>
+      <span>
+        <a href="https://github.com/jhwn223">GitHub</a>
+      </span>
+    </footer>
+
+  </div>
+</body>
+</html>
