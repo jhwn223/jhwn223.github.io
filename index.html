@@ -11,7 +11,7 @@
     :root {
       --bg: #f4f1ea;
       --ink: #1c1a17;
-      --muted: #6b665c;
+      --muted: #565047;
       --line: #d8d2c4;
       --accent: #b5432a;
       --display: "Fraunces", Georgia, serif;
@@ -27,10 +27,10 @@
       background: var(--bg);
       color: var(--ink);
       font-family: var(--body);
-      line-height: 1.65;
+      line-height: 1.7;
       -webkit-font-smoothing: antialiased;
-      background-image: radial-gradient(var(--line) 0.5px, transparent 0.5px);
-      background-size: 22px 22px;
+      background-image: radial-gradient(#e7e1d3 0.5px, transparent 0.5px);
+      background-size: 26px 26px;
     }
 
     .wrap { max-width: 720px; margin: 0 auto; padding: 0 28px; }
@@ -81,8 +81,9 @@
       font-size: clamp(17px, 2.4vw, 20px);
       color: var(--muted);
       max-width: 56ch;
+      line-height: 1.75;
     }
-    .hero .bio strong { color: var(--ink); font-weight: 500; }
+    .hero .bio strong { color: var(--ink); font-weight: 600; }
 
     section { padding: 56px 0; border-top: 1px solid var(--line); }
     .section-head {
@@ -103,30 +104,12 @@
       letter-spacing: -0.01em;
     }
 
-    .empty {
-      border: 1px dashed var(--line);
-      border-radius: 14px;
-      padding: 56px 28px;
-      text-align: center;
-      color: var(--muted);
-      font-family: var(--mono);
-      font-size: 14px;
-    }
-    .empty .dot {
-      display: inline-block;
-      width: 8px; height: 8px;
-      border-radius: 50%;
-      background: var(--accent);
-      margin-bottom: 16px;
-      animation: pulse 2s ease-in-out infinite;
-    }
-
     /* 프로젝트 카드 */
     .project {
       border: 1px solid var(--line);
       border-radius: 14px;
       padding: 32px 28px;
-      background: rgba(255, 255, 255, 0.45);
+      background: rgba(255, 255, 255, 0.6);
       transition: border-color 0.25s, transform 0.25s;
     }
     .project:hover {
@@ -152,6 +135,7 @@
     .project .desc {
       color: var(--muted);
       font-size: 16px;
+      line-height: 1.75;
       margin-bottom: 24px;
       max-width: 54ch;
     }
@@ -201,9 +185,9 @@
     }
     .project .repo-link:hover { color: var(--accent); }
 
-    /* 스킬 줄 */
-    .skill-list { display: flex; flex-direction: column; }
-    .skill-row {
+    /* 테크 스택 */
+    .stack-list { display: flex; flex-direction: column; }
+    .stack-row {
       display: flex;
       align-items: baseline;
       gap: 20px;
@@ -211,7 +195,7 @@
       border-bottom: 1px solid var(--line);
       flex-wrap: wrap;
     }
-    .skill-row .label {
+    .stack-row .label {
       font-family: var(--mono);
       font-size: 12px;
       color: var(--muted);
@@ -219,17 +203,18 @@
       letter-spacing: 0.08em;
       min-width: 110px;
     }
-    .skill-tags { display: flex; flex-wrap: wrap; gap: 8px; }
-    .skill-tags .tag {
+    .stack-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+    .stack-tags .tag {
       font-family: var(--mono);
-      font-size: 12px;
+      font-size: 13px;
       color: var(--ink);
+      background: rgba(255, 255, 255, 0.6);
       border: 1px solid var(--line);
       border-radius: 999px;
-      padding: 5px 13px;
+      padding: 6px 14px;
       transition: border-color 0.2s, color 0.2s;
     }
-    .skill-tags .tag:hover { border-color: var(--accent); color: var(--accent); }
+    .stack-tags .tag:hover { border-color: var(--accent); color: var(--accent); }
 
     /* 컨택 줄 */
     .contact-list { display: flex; flex-direction: column; }
@@ -276,10 +261,6 @@
       from { opacity: 0; transform: translateY(16px); }
       to   { opacity: 1; transform: translateY(0); }
     }
-    @keyframes pulse {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50%      { opacity: 0.4; transform: scale(0.8); }
-    }
   </style>
 </head>
 <body>
@@ -289,7 +270,7 @@
       <span class="site">jhwn223</span>
       <nav>
         <a href="#about">About</a>
-        <a href="#skills">Skills</a>
+        <a href="#stack">Tech Stack</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -306,31 +287,31 @@
       </p>
     </header>
 
-    <section id="skills">
+    <section id="stack">
       <div class="section-head">
         <span class="num">01</span>
-        <h2>Skills</h2>
+        <h2>Tech Stack</h2>
       </div>
-      <div class="skill-list">
-        <div class="skill-row">
+      <div class="stack-list">
+        <div class="stack-row">
           <span class="label">Languages</span>
-          <div class="skill-tags">
+          <div class="stack-tags">
             <span class="tag">C</span>
             <span class="tag">Java</span>
             <span class="tag">Python</span>
           </div>
         </div>
-        <div class="skill-row">
+        <div class="stack-row">
           <span class="label">Data / ML</span>
-          <div class="skill-tags">
+          <div class="stack-tags">
             <span class="tag">Pandas</span>
             <span class="tag">scikit-learn</span>
             <span class="tag">PyArrow</span>
           </div>
         </div>
-        <div class="skill-row">
+        <div class="stack-row">
           <span class="label">Tools</span>
-          <div class="skill-tags">
+          <div class="stack-tags">
             <span class="tag">Git</span>
             <span class="tag">GitHub</span>
             <span class="tag">VS Code</span>
