@@ -121,6 +121,116 @@
       animation: pulse 2s ease-in-out infinite;
     }
 
+    /* 프로젝트 카드 */
+    .project {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 32px 28px;
+      background: rgba(255, 255, 255, 0.45);
+      transition: border-color 0.25s, transform 0.25s;
+    }
+    .project:hover {
+      border-color: var(--accent);
+      transform: translateY(-3px);
+    }
+    .project .kicker {
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 12px;
+    }
+    .project h3 {
+      font-family: var(--display);
+      font-weight: 500;
+      font-size: clamp(21px, 4vw, 26px);
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+      margin-bottom: 14px;
+    }
+    .project .desc {
+      color: var(--muted);
+      font-size: 16px;
+      margin-bottom: 24px;
+      max-width: 54ch;
+    }
+    .project .metrics {
+      display: flex;
+      gap: 32px;
+      flex-wrap: wrap;
+      margin-bottom: 24px;
+    }
+    .project .metric .val {
+      font-family: var(--display);
+      font-weight: 500;
+      font-size: 24px;
+      color: var(--accent);
+      line-height: 1.1;
+    }
+    .project .metric .cap {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      margin-top: 4px;
+    }
+    .project .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 26px;
+    }
+    .project .tag {
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--ink);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 5px 13px;
+    }
+    .project .repo-link {
+      font-family: var(--mono);
+      font-size: 14px;
+      color: var(--ink);
+      text-decoration: none;
+      border-bottom: 1px solid var(--accent);
+      padding-bottom: 2px;
+      transition: color 0.2s;
+    }
+    .project .repo-link:hover { color: var(--accent); }
+
+    /* 스킬 줄 */
+    .skill-list { display: flex; flex-direction: column; }
+    .skill-row {
+      display: flex;
+      align-items: baseline;
+      gap: 20px;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--line);
+      flex-wrap: wrap;
+    }
+    .skill-row .label {
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      min-width: 110px;
+    }
+    .skill-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+    .skill-tags .tag {
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--ink);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 5px 13px;
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .skill-tags .tag:hover { border-color: var(--accent); color: var(--accent); }
+
     /* 컨택 줄 */
     .contact-list { display: flex; flex-direction: column; }
     .contact-row {
@@ -179,6 +289,7 @@
       <span class="site">jhwn223</span>
       <nav>
         <a href="#about">About</a>
+        <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -195,20 +306,82 @@
       </p>
     </header>
 
-    <section id="projects">
+    <section id="skills">
       <div class="section-head">
         <span class="num">01</span>
+        <h2>Skills</h2>
+      </div>
+      <div class="skill-list">
+        <div class="skill-row">
+          <span class="label">Languages</span>
+          <div class="skill-tags">
+            <span class="tag">C</span>
+            <span class="tag">Java</span>
+            <span class="tag">Python</span>
+          </div>
+        </div>
+        <div class="skill-row">
+          <span class="label">Data / ML</span>
+          <div class="skill-tags">
+            <span class="tag">Pandas</span>
+            <span class="tag">scikit-learn</span>
+            <span class="tag">PyArrow</span>
+          </div>
+        </div>
+        <div class="skill-row">
+          <span class="label">Tools</span>
+          <div class="skill-tags">
+            <span class="tag">Git</span>
+            <span class="tag">GitHub</span>
+            <span class="tag">VS Code</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="section-head">
+        <span class="num">02</span>
         <h2>Projects</h2>
       </div>
-      <div class="empty">
-        <span class="dot"></span><br />
-        Coming soon
-      </div>
+
+      <article class="project">
+        <p class="kicker">Data Analysis &middot; Machine Learning</p>
+        <h3>Seoul Bike (Ttareungi) Shortage Analysis &amp; Prediction</h3>
+        <p class="desc">
+          서울 공공자전거 &lsquo;따릉이&rsquo; 대여 데이터 약 170만 건을 진단 &rarr; 인사이트 &rarr; 예측의
+          흐름으로 분석한 프로젝트. 시간대&middot;대여소별 부족을 진단하고, OD(출발-도착) 동선을 분석한 뒤,
+          머신러닝 이진 분류로 자전거 부족을 예측합니다.
+        </p>
+        <div class="metrics">
+          <div class="metric">
+            <div class="val">1.7M</div>
+            <div class="cap">대여 기록</div>
+          </div>
+          <div class="metric">
+            <div class="val">0.66 &rarr; 0.73</div>
+            <div class="cap">AUC (피처 엔지니어링)</div>
+          </div>
+          <div class="metric">
+            <div class="val">Last-mile</div>
+            <div class="cap">핵심 인사이트</div>
+          </div>
+        </div>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">scikit-learn</span>
+          <span class="tag">PyArrow</span>
+        </div>
+        <a class="repo-link" href="https://github.com/jhwn223/ttareungi-project" target="_blank" rel="noopener">
+          View Repository &rarr;
+        </a>
+      </article>
     </section>
 
     <section id="contact">
       <div class="section-head">
-        <span class="num">02</span>
+        <span class="num">03</span>
         <h2>Contact</h2>
       </div>
       <div class="contact-list">
