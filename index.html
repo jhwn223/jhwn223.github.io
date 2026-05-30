@@ -136,9 +136,43 @@
       color: var(--muted);
       font-size: 16px;
       line-height: 1.75;
+      margin-bottom: 18px;
+      max-width: 54ch;
+    }
+
+    /* 프로젝트 단계 목록 */
+    .steps {
+      list-style: none;
+      counter-reset: step;
       margin-bottom: 24px;
       max-width: 54ch;
     }
+    .steps li {
+      counter-increment: step;
+      position: relative;
+      padding-left: 38px;
+      margin-bottom: 12px;
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .steps li::before {
+      content: counter(step);
+      position: absolute;
+      left: 0;
+      top: 1px;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: #fff;
+      font-family: var(--mono);
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
     .project .metrics {
       display: flex;
       gap: 32px;
@@ -330,10 +364,13 @@
         <p class="kicker">Data Analysis &middot; Machine Learning</p>
         <h3>🚲 Seoul Bike (Ttareungi) Shortage Analysis &amp; Prediction</h3>
         <p class="desc">
-          서울 공공자전거 &lsquo;따릉이&rsquo; 대여 데이터 약 170만 건을 진단 &rarr; 인사이트 &rarr; 예측의
-          흐름으로 분석한 프로젝트. 시간대&middot;대여소별 부족을 진단하고, OD(출발-도착) 동선을 분석한 뒤,
-          머신러닝 이진 분류로 자전거 부족을 예측합니다.
+          서울 공공자전거 &lsquo;따릉이&rsquo; 대여 데이터 약 170만 건을 세 단계로 분석한 프로젝트입니다.
         </p>
+        <ol class="steps">
+          <li>시간대&middot;대여소별 자전거 부족을 진단</li>
+          <li>OD(출발-도착) 동선으로 이동 패턴 분석</li>
+          <li>머신러닝 이진 분류로 부족을 예측</li>
+        </ol>
         <div class="metrics">
           <div class="metric">
             <div class="val">1.7M</div>
