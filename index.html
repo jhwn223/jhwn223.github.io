@@ -31,6 +31,8 @@
       -webkit-font-smoothing: antialiased;
       background-image: radial-gradient(#e7e1d3 0.5px, transparent 0.5px);
       background-size: 26px 26px;
+      word-break: keep-all;
+      overflow-wrap: break-word;
     }
 
     .wrap { max-width: 720px; margin: 0 auto; padding: 0 28px; }
@@ -81,7 +83,7 @@
       font-size: clamp(17px, 2.4vw, 20px);
       color: var(--muted);
       max-width: 56ch;
-      line-height: 1.75;
+      line-height: 1.8;
     }
     .hero .bio strong { color: var(--ink); font-weight: 600; }
 
@@ -129,13 +131,13 @@
       font-weight: 500;
       font-size: clamp(21px, 4vw, 26px);
       letter-spacing: -0.01em;
-      line-height: 1.2;
+      line-height: 1.25;
       margin-bottom: 14px;
     }
     .project .desc {
       color: var(--muted);
       font-size: 16px;
-      line-height: 1.75;
+      line-height: 1.8;
       margin-bottom: 18px;
       max-width: 54ch;
     }
@@ -154,13 +156,13 @@
       margin-bottom: 12px;
       color: var(--muted);
       font-size: 16px;
-      line-height: 1.6;
+      line-height: 1.65;
     }
     .steps li::before {
       content: counter(step);
       position: absolute;
       left: 0;
-      top: 1px;
+      top: 2px;
       width: 24px;
       height: 24px;
       border-radius: 50%;
@@ -271,160 +273,3 @@
     .contact-row a {
       font-size: 17px;
       color: var(--ink);
-      text-decoration: none;
-      border-bottom: 1px solid transparent;
-      transition: color 0.2s, border-color 0.2s;
-    }
-    .contact-row a:hover { color: var(--accent); border-color: var(--accent); }
-
-    footer {
-      padding: 48px 0 64px;
-      border-top: 1px solid var(--line);
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 16px;
-      font-family: var(--mono);
-      font-size: 13px;
-      color: var(--muted);
-    }
-    footer a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--line); padding-bottom: 1px; transition: border-color 0.2s; }
-    footer a:hover { border-color: var(--accent); }
-
-    @keyframes rise {
-      from { opacity: 0; transform: translateY(16px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
-  </style>
-</head>
-<body>
-  <div class="wrap">
-
-    <div class="topbar">
-      <span class="site">jhwn223</span>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#stack">Tech Stack</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-
-    <header class="hero" id="about">
-      <p class="eyebrow">Chung-Ang University &middot; Software</p>
-      <h1>Hello, I&rsquo;m<br><em>Jihwan Kim</em></h1>
-      <p class="bio">
-        a Software student at Chung-Ang University. I&rsquo;m interested in
-        <strong>AI</strong>, <strong>Data Science</strong>, and software development.
-        I&rsquo;m currently building my foundation in computer science and growing as a
-        developer who solves problems with reliable software.
-      </p>
-    </header>
-
-    <section id="stack">
-      <div class="section-head">
-        <span class="num">01</span>
-        <h2>Tech Stack</h2>
-      </div>
-      <div class="stack-list">
-        <div class="stack-row">
-          <span class="label">Languages</span>
-          <div class="stack-tags">
-            <span class="tag">C</span>
-            <span class="tag">Java</span>
-            <span class="tag">Python</span>
-          </div>
-        </div>
-        <div class="stack-row">
-          <span class="label">Data / ML</span>
-          <div class="stack-tags">
-            <span class="tag">Pandas</span>
-            <span class="tag">scikit-learn</span>
-            <span class="tag">PyArrow</span>
-          </div>
-        </div>
-        <div class="stack-row">
-          <span class="label">Tools</span>
-          <div class="stack-tags">
-            <span class="tag">Git</span>
-            <span class="tag">GitHub</span>
-            <span class="tag">VS Code</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects">
-      <div class="section-head">
-        <span class="num">02</span>
-        <h2>Projects</h2>
-      </div>
-
-      <article class="project">
-        <p class="kicker">Data Analysis &middot; Machine Learning</p>
-        <h3>🚲 Seoul Bike (Ttareungi) Shortage Analysis &amp; Prediction</h3>
-        <p class="desc">
-          서울 공공자전거 &lsquo;따릉이&rsquo; 대여 데이터 약 170만 건을 세 단계로 분석한 프로젝트입니다.
-        </p>
-        <ol class="steps">
-          <li>시간대&middot;대여소별 자전거 부족을 진단</li>
-          <li>OD(출발-도착) 동선으로 이동 패턴 분석</li>
-          <li>머신러닝 이진 분류로 부족을 예측</li>
-        </ol>
-        <div class="metrics">
-          <div class="metric">
-            <div class="val">1.7M</div>
-            <div class="cap">대여 기록</div>
-          </div>
-          <div class="metric">
-            <div class="val">0.66 &rarr; 0.73</div>
-            <div class="cap">AUC (피처 엔지니어링)</div>
-          </div>
-          <div class="metric">
-            <div class="val">Last-mile</div>
-            <div class="cap">핵심 인사이트</div>
-          </div>
-        </div>
-        <div class="tags">
-          <span class="tag">Python</span>
-          <span class="tag">Pandas</span>
-          <span class="tag">scikit-learn</span>
-          <span class="tag">PyArrow</span>
-        </div>
-        <a class="repo-link" href="https://github.com/jhwn223/ttareungi-project" target="_blank" rel="noopener">
-          View Repository &rarr;
-        </a>
-      </article>
-    </section>
-
-    <section id="contact">
-      <div class="section-head">
-        <span class="num">03</span>
-        <h2>Contact</h2>
-      </div>
-      <div class="contact-list">
-        <div class="contact-row">
-          <span class="label">Email</span>
-          <a href="mailto:kimjh050223@gmail.com">kimjh050223@gmail.com</a>
-        </div>
-        <div class="contact-row">
-          <span class="label">University</span>
-          <a href="mailto:jhwn223@cau.ac.kr">jhwn223@cau.ac.kr</a>
-        </div>
-        <div class="contact-row">
-          <span class="label">GitHub</span>
-          <a href="https://github.com/jhwn223">github.com/jhwn223</a>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <span>&copy; 2026 Jihwan Kim</span>
-      <span>
-        <a href="https://github.com/jhwn223">GitHub</a>
-      </span>
-    </footer>
-
-  </div>
-</body>
-</html>
