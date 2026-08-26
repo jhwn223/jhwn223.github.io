@@ -268,23 +268,23 @@
 
   .card > p { margin: 0 0 1rem; }
 
-  .card ul {
-    margin: 0 0 1.25rem;
-    padding-left: 1.125rem;
+  .see-all {
+    margin: 1.75rem 0 0;
+    text-align: center;
   }
 
-  .card li { margin-bottom: .5rem; }
-
-  .card li:last-child { margin-bottom: 0; }
-
-  .card li b { font-weight: 700; }
-
-  .card .next {
+  .see-all a {
     font-size: .9375rem;
+    font-weight: 700;
     color: var(--muted);
-    margin: 0 0 1.25rem;
-    padding-left: .875rem;
-    border-left: 2px solid var(--border);
+    text-decoration: none;
+    border-bottom: 1px solid var(--border);
+    transition: color .15s, border-color .15s;
+  }
+
+  .see-all a:hover {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
   }
 
   .card-links {
@@ -511,19 +511,10 @@
       </div>
       <p class="sub">Plan a date course together — no sign-up, just an invite link</p>
       <p>
-        A collaborative web service where couples or friends join the same course room to find places,
-        share opinions, and build a course together. Instead of signing up, people enter with a nickname
-        and an anonymous session; anyone with the invite link immediately sees the room&rsquo;s course and
-        conversation in real time.
+        A collaborative web service where couples or friends join the same room to find places and build a
+        course together. Anyone with the invite link joins with just a nickname and sees the course, comments,
+        and pending suggestions update in real time.
       </p>
-      <ul>
-        <li><b>Anonymous rooms</b> — join with a nickname, no login; enter through an invite code link or a KakaoTalk share</li>
-        <li><b>Place search on Kakao Maps</b> — search by keyword and category, with results and course stops shown as map markers</li>
-        <li><b>Edit rules that scale with the room</b> — solo edits apply instantly; with two or more people, changes go through a propose → accept/reject flow</li>
-        <li><b>Real-time sync</b> — Supabase Realtime keeps the course, participants, comments, and pending proposals identical on every screen</li>
-        <li><b>Access control</b> — Row Level Security and PostgreSQL RPC scope permissions to each room&rsquo;s participants</li>
-        <li><b>Mobile layout</b> — course / map / chat tabs, with drag-and-drop reordering of stops</li>
-      </ul>
       <div class="chips">
         <span class="chip">Next.js</span>
         <span class="chip">React</span>
@@ -546,15 +537,9 @@
       </div>
       <p class="sub">A 2026 World Cup tactics simulator</p>
       <p>
-        Manage one of 48 national teams from the group stage through the knockout rounds. Build tactics on
-        real fixtures and player data, then compare your results against what actually happened.
+        Manage one of 48 national teams from the group stage through the knockout rounds. Build a squad with
+        drag-and-drop, watch matches play out in animated 2D, then compare your run against the real tournament.
       </p>
-      <ul>
-        <li><b>Drag-and-drop squad management</b> — 8 formations, role-based auto-placement, and defensive / balanced / attacking presets</li>
-        <li><b>Altitude conditioning index</b> — a custom metric from stadium elevation, rest days, recent minutes played, and international caps</li>
-        <li><b>Animated 2D matches</b> — live progression, goal animations, halftime tactical changes, and a 5-substitution limit</li>
-        <li><b>Result comparison</b> — line your outcome up against the real tournament record</li>
-      </ul>
       <div class="chips">
         <span class="chip">TypeScript</span>
         <span class="chip">React</span>
@@ -564,9 +549,13 @@
       </div>
       <div class="card-links">
         <a href="https://jhwn223.github.io/MatchplanXI/" target="_blank" rel="noopener">Live demo →</a>
-        <a href="https://github.com/jhwn223/MatchplanXI" target="_blank" rel="noopener">Repository</a>
+        <a href="https://github.com/jhwn223/MatchplanXI" target="_blank" rel="noopener">View more on GitHub</a>
       </div>
     </article>
+
+    <p class="see-all">
+      <a href="https://github.com/jhwn223?tab=repositories" target="_blank" rel="noopener">See all repositories on GitHub →</a>
+    </p>
   </div>
 </section>
 
@@ -584,19 +573,9 @@
       </div>
       <p class="sub">Predicting bike shortages in Seoul&rsquo;s public bike system (Ttareungi)</p>
       <p>
-        Combining 1.7 million rental records from January 2025 with weather data from the Korea
-        Meteorological Administration, this project works through three stages: diagnosing shortages,
-        mapping movement flows, and predicting where bikes will run out.
-      </p>
-      <ul>
-        <li><b>Diagnosing shortages</b> — hourly net-flow aggregation across 2,000+ stations, showing shortages concentrated at 7 AM on weekdays</li>
-        <li><b>Movement flow analysis</b> — the top 20 origin-destination patterns confirm bikes act as last-mile transit between subway stations and residential or commercial areas</li>
-        <li><b>Shortage prediction</b> — binary classification on “short by 3+ bikes per hour”; a logistic regression baseline improved to a random forest with lag features and weather, raising AUC from 0.66 to 0.73</li>
-        <li><b>Hypothesis check</b> — shortages fall from 6.9% to 4.5% during precipitation</li>
-      </ul>
-      <p class="next">
-        Next — address the seasonality limits of a single month of data, incorporate multiple weather stations,
-        and improve precision under class imbalance.
+        Combining 1.7 million rental records with weather data to diagnose where and when bikes run out,
+        map how riders move between stations, and predict shortages. Lag features and weather raised the
+        model&rsquo;s AUC from 0.66 to 0.73.
       </p>
       <div class="chips">
         <span class="chip">Python</span>
@@ -605,7 +584,7 @@
         <span class="chip">scikit-learn</span>
       </div>
       <div class="card-links">
-        <a href="https://github.com/jhwn223/ttareungi-project" target="_blank" rel="noopener">Repository →</a>
+        <a href="https://github.com/jhwn223/ttareungi-project" target="_blank" rel="noopener">View more on GitHub →</a>
       </div>
     </article>
   </div>
