@@ -1,10 +1,29 @@
+
+Claude Desktop (macOS), 연결됨
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Index · HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Jihwan Kim</title>
-<meta name="description" content="Software student at Chung-Ang University. Data analysis and web development." />
+<meta name="description" content="Software student at Chung-Ang University. Data science, machine learning, and web development." />
 <style>
   :root {
     --bg: #ffffff;
@@ -18,7 +37,7 @@
     --chip-text: #3f3d39;
     --max: 46rem;
   }
-
+ 
   @media (prefers-color-scheme: dark) {
     :root {
       --bg: #12110f;
@@ -32,11 +51,11 @@
       --chip-text: #d3cfc8;
     }
   }
-
+ 
   * { box-sizing: border-box; }
-
+ 
   html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
-
+ 
   body {
     margin: 0;
     background: var(--bg);
@@ -48,17 +67,17 @@
     overflow-wrap: break-word;
     -webkit-font-smoothing: antialiased;
   }
-
+ 
   a { color: inherit; }
-
+ 
   .wrap {
     max-width: var(--max);
     margin: 0 auto;
     padding: 0 1.5rem;
   }
-
+ 
   /* ---------- nav ---------- */
-
+ 
   nav {
     position: sticky;
     top: 0;
@@ -67,7 +86,7 @@
     backdrop-filter: saturate(180%) blur(12px);
     border-bottom: 1px solid var(--border);
   }
-
+ 
   .nav-inner {
     display: flex;
     align-items: center;
@@ -75,14 +94,14 @@
     gap: 1rem;
     height: 3.5rem;
   }
-
+ 
   .nav-name {
     font-weight: 700;
     letter-spacing: -0.01em;
     text-decoration: none;
     white-space: nowrap;
   }
-
+ 
   .nav-links {
     display: flex;
     gap: 1.25rem;
@@ -90,9 +109,9 @@
     scrollbar-width: none;
     -ms-overflow-style: none;
   }
-
+ 
   .nav-links::-webkit-scrollbar { display: none; }
-
+ 
   .nav-links a {
     color: var(--muted);
     text-decoration: none;
@@ -102,19 +121,19 @@
     border-bottom: 2px solid transparent;
     transition: color .15s, border-color .15s;
   }
-
+ 
   .nav-links a:hover {
     color: var(--text);
     border-bottom-color: var(--accent);
   }
-
+ 
   /* ---------- hero ---------- */
-
+ 
   header.hero {
     padding: clamp(3.5rem, 10vw, 6rem) 0 clamp(2.5rem, 7vw, 4rem);
     border-bottom: 1px solid var(--border);
   }
-
+ 
   .hero h1 {
     margin: 0 0 .375rem;
     font-size: clamp(2.125rem, 7vw, 3rem);
@@ -122,41 +141,41 @@
     letter-spacing: -0.03em;
     font-weight: 800;
   }
-
+ 
   .hero .role {
     color: var(--muted);
     font-weight: 500;
     font-size: clamp(1rem, 3.5vw, 1.125rem);
     margin: 0 0 1.75rem;
   }
-
+ 
   .hero p.lead {
     font-size: clamp(1.0625rem, 3vw, 1.1875rem);
     margin: 0;
     max-width: 34rem;
   }
-
+ 
   .hero p.lead strong {
     color: var(--accent);
     font-weight: 700;
   }
-
+ 
   /* ---------- sections ---------- */
-
+ 
   section {
     padding: clamp(3rem, 8vw, 4.5rem) 0;
     border-bottom: 1px solid var(--border);
   }
-
+ 
   section:last-of-type { border-bottom: none; }
-
+ 
   .sec-head {
     display: flex;
     align-items: baseline;
     gap: .75rem;
     margin-bottom: 2rem;
   }
-
+ 
   .sec-num {
     color: var(--accent);
     font-size: .875rem;
@@ -164,16 +183,27 @@
     font-variant-numeric: tabular-nums;
     letter-spacing: .06em;
   }
-
+ 
   .sec-head h2 {
     margin: 0;
     font-size: clamp(1.375rem, 4.5vw, 1.75rem);
     letter-spacing: -0.02em;
     font-weight: 700;
   }
-
+ 
+  .group-head {
+    margin: 0 0 1rem;
+    font-size: .8125rem;
+    font-weight: 700;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+ 
+  .group + .group { margin-top: 2.5rem; }
+ 
   /* ---------- skills ---------- */
-
+ 
   .skill-row {
     display: grid;
     grid-template-columns: 9.5rem 1fr;
@@ -182,9 +212,9 @@
     border-top: 1px solid var(--border);
     align-items: start;
   }
-
+ 
   .skill-row:last-child { border-bottom: 1px solid var(--border); }
-
+ 
   .skill-row h3 {
     margin: 0;
     font-size: .8125rem;
@@ -194,13 +224,13 @@
     color: var(--muted);
     padding-top: .3rem;
   }
-
+ 
   .chips {
     display: flex;
     flex-wrap: wrap;
     gap: .4rem;
   }
-
+ 
   .chip {
     display: inline-block;
     padding: .25rem .625rem;
@@ -211,7 +241,7 @@
     font-weight: 600;
     line-height: 1.5;
   }
-
+ 
   @media (max-width: 34rem) {
     .skill-row {
       grid-template-columns: 1fr;
@@ -219,9 +249,9 @@
     }
     .skill-row h3 { padding-top: 0; }
   }
-
+ 
   /* ---------- cards ---------- */
-
+ 
   .card {
     background: var(--surface);
     border: 1px solid var(--border);
@@ -229,9 +259,17 @@
     padding: clamp(1.25rem, 4vw, 1.75rem);
     margin-bottom: 1.25rem;
   }
-
+ 
   .card:last-child { margin-bottom: 0; }
-
+ 
+  .card.placeholder {
+    background: transparent;
+    border-style: dashed;
+    color: var(--muted);
+    font-size: .9375rem;
+    text-align: center;
+  }
+ 
   .card-top {
     display: flex;
     flex-wrap: wrap;
@@ -239,14 +277,14 @@
     gap: .625rem;
     margin-bottom: .375rem;
   }
-
+ 
   .card h3 {
     margin: 0;
     font-size: clamp(1.125rem, 3.5vw, 1.3125rem);
     letter-spacing: -0.015em;
     font-weight: 700;
   }
-
+ 
   .tag {
     display: inline-block;
     padding: .1875rem .5rem;
@@ -259,20 +297,20 @@
     border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
     white-space: nowrap;
   }
-
+ 
   .card .sub {
     color: var(--muted);
     font-size: .9375rem;
     margin: 0 0 1rem;
   }
-
+ 
   .card > p { margin: 0 0 1rem; }
-
+ 
   .see-all {
     margin: 1.75rem 0 0;
     text-align: center;
   }
-
+ 
   .see-all a {
     font-size: .9375rem;
     font-weight: 700;
@@ -281,19 +319,19 @@
     border-bottom: 1px solid var(--border);
     transition: color .15s, border-color .15s;
   }
-
+ 
   .see-all a:hover {
     color: var(--accent);
     border-bottom-color: var(--accent);
   }
-
+ 
   .card-links {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     margin-top: 1.25rem;
   }
-
+ 
   .card-links a {
     font-size: .9375rem;
     font-weight: 700;
@@ -301,22 +339,22 @@
     text-decoration: none;
     border-bottom: 1px solid color-mix(in srgb, var(--accent) 40%, transparent);
   }
-
+ 
   .card-links a:hover { border-bottom-color: var(--accent); }
-
+ 
   .card-links .no-link {
     font-size: .9375rem;
     color: var(--muted);
   }
-
+ 
   /* ---------- contact ---------- */
-
+ 
   .contact-list {
     list-style: none;
     margin: 0;
     padding: 0;
   }
-
+ 
   .contact-list li {
     display: grid;
     grid-template-columns: 7rem 1fr;
@@ -325,9 +363,9 @@
     border-top: 1px solid var(--border);
     align-items: baseline;
   }
-
+ 
   .contact-list li:last-child { border-bottom: 1px solid var(--border); }
-
+ 
   .contact-list .label {
     font-size: .8125rem;
     font-weight: 700;
@@ -335,53 +373,53 @@
     letter-spacing: .06em;
     text-transform: uppercase;
   }
-
+ 
   .contact-list a {
     text-decoration: none;
     font-weight: 600;
     border-bottom: 1px solid var(--border);
     word-break: break-all;
   }
-
+ 
   .contact-list a:hover {
     color: var(--accent);
     border-bottom-color: var(--accent);
   }
-
+ 
   @media (max-width: 34rem) {
     .contact-list li {
       grid-template-columns: 1fr;
       gap: .125rem;
     }
   }
-
+ 
   /* ---------- footer ---------- */
-
+ 
   footer {
     padding: 2.5rem 0 3.5rem;
     border-top: 1px solid var(--border);
     color: var(--muted);
     font-size: .875rem;
   }
-
+ 
   footer .wrap {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: .5rem;
   }
-
+ 
   footer a { text-decoration: none; border-bottom: 1px solid var(--border); }
   footer a:hover { color: var(--accent); }
-
+ 
   /* ---------- a11y ---------- */
-
+ 
   :focus-visible {
     outline: 2px solid var(--accent);
     outline-offset: 3px;
     border-radius: 3px;
   }
-
+ 
   @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
     * { transition: none !important; }
@@ -389,7 +427,7 @@
 </style>
 </head>
 <body>
-
+ 
 <nav>
   <div class="wrap nav-inner">
     <a class="nav-name" href="#top">Jihwan Kim</a>
@@ -402,28 +440,28 @@
     </div>
   </div>
 </nav>
-
+ 
 <header class="hero" id="top">
   <div class="wrap">
     <h1>Jihwan Kim</h1>
-    <p class="role">Software Engineering, Chung-Ang University &nbsp;·&nbsp; Seoul, South Korea</p>
+    <p class="role">School of Software, Chung-Ang University &nbsp;·&nbsp; Seoul, South Korea</p>
     <p class="lead">
-      I&rsquo;m interested in <strong>AI</strong>, <strong>Data Science</strong>, and
+      I&rsquo;m interested in <strong>Data Science</strong>, <strong>Machine Learning</strong>, and
       software development. I&rsquo;m currently building my foundation in computer science
-      and growing as a developer who solves problems with reliable software.
+      and growing as a developer who solves problems with reliable software and data.
     </p>
   </div>
 </header>
-
+ 
 <main>
-
+ 
 <section id="skills">
   <div class="wrap">
     <div class="sec-head">
       <span class="sec-num">01</span>
       <h2>Tech Stack</h2>
     </div>
-
+ 
     <div class="skill-row">
       <h3>Languages</h3>
       <div class="chips">
@@ -434,7 +472,7 @@
         <span class="chip">JavaScript</span>
       </div>
     </div>
-
+ 
     <div class="skill-row">
       <h3>Data Analysis</h3>
       <div class="chips">
@@ -444,17 +482,18 @@
         <span class="chip">Matplotlib</span>
       </div>
     </div>
-
+ 
     <div class="skill-row">
       <h3>Machine Learning</h3>
       <div class="chips">
         <span class="chip">scikit-learn</span>
-        <span class="chip">Logistic Regression</span>
-        <span class="chip">Random Forest</span>
+        <span class="chip">Hugging Face</span>
+        <span class="chip">Model Evaluation</span>
+        <span class="chip">Calibration</span>
         <span class="chip">Feature Engineering</span>
       </div>
     </div>
-
+ 
     <div class="skill-row">
       <h3>Web</h3>
       <div class="chips">
@@ -464,7 +503,7 @@
         <span class="chip">Kakao Maps SDK</span>
       </div>
     </div>
-
+ 
     <div class="skill-row">
       <h3>Backend &amp; DB</h3>
       <div class="chips">
@@ -474,7 +513,7 @@
         <span class="chip">Row Level Security</span>
       </div>
     </div>
-
+ 
     <div class="skill-row">
       <h3>Tools</h3>
       <div class="chips">
@@ -482,10 +521,11 @@
         <span class="chip">GitHub</span>
         <span class="chip">VS Code</span>
         <span class="chip">Jupyter</span>
+        <span class="chip">Streamlit</span>
         <span class="chip">npm</span>
       </div>
     </div>
-
+ 
     <div class="skill-row">
       <h3>Deploy</h3>
       <div class="chips">
@@ -496,86 +536,117 @@
     </div>
   </div>
 </section>
-
+ 
 <section id="projects">
   <div class="wrap">
     <div class="sec-head">
       <span class="sec-num">02</span>
       <h2>Projects</h2>
     </div>
-
-    <article class="card">
-      <div class="card-top">
-        <h3>Coursepic</h3>
-        <span class="tag">DEPLOYED</span>
-      </div>
-      <p class="sub">Plan a date course together — no sign-up, just an invite link</p>
-      <p>
-        A collaborative web service where couples or friends join the same room to find places and build a
-        course together. Anyone with the invite link joins with just a nickname and sees the course, comments,
-        and pending suggestions update in real time.
-      </p>
-      <div class="chips">
-        <span class="chip">Next.js</span>
-        <span class="chip">React</span>
-        <span class="chip">JavaScript</span>
-        <span class="chip">Supabase</span>
-        <span class="chip">PostgreSQL</span>
-        <span class="chip">Kakao Maps</span>
-        <span class="chip">Vercel</span>
-      </div>
-      <div class="card-links">
-        <a href="https://travel-szul.vercel.app" target="_blank" rel="noopener">Visit the service →</a>
-        <span class="no-link">Repository private</span>
-      </div>
-    </article>
-
-    <article class="card">
-      <div class="card-top">
-        <h3>MatchplanXI</h3>
-        <span class="tag">DEPLOYED</span>
-      </div>
-      <p class="sub">A 2026 World Cup tactics simulator</p>
-      <p>
-        Manage one of 48 national teams from the group stage through the knockout rounds. Build a squad with
-        drag-and-drop, watch matches play out in animated 2D, then compare your run against the real tournament.
-      </p>
-      <div class="chips">
-        <span class="chip">TypeScript</span>
-        <span class="chip">React</span>
-        <span class="chip">Vite</span>
-        <span class="chip">dnd-kit</span>
-        <span class="chip">Framer Motion</span>
-      </div>
-      <div class="card-links">
-        <a href="https://jhwn223.github.io/MatchplanXI/" target="_blank" rel="noopener">Live demo →</a>
-        <a href="https://github.com/jhwn223/MatchplanXI" target="_blank" rel="noopener">View more on GitHub</a>
-      </div>
-    </article>
-
+ 
+    <div class="group">
+      <h3 class="group-head">Independent Projects</h3>
+      <div class="card placeholder">Coming soon — new projects will be added here.</div>
+    </div>
+ 
+    <div class="group">
+      <h3 class="group-head">Academic Projects</h3>
+ 
+      <article class="card">
+        <div class="card-top">
+          <h3>MatchplanXI</h3>
+          <span class="tag">DEPLOYED</span>
+        </div>
+        <p class="sub">2026 World Cup tactics simulator</p>
+        <p>
+          Manage any of the 48 national teams from the group stage to the final, then compare your
+          results with the real tournament.
+        </p>
+        <div class="chips">
+          <span class="chip">TypeScript</span>
+          <span class="chip">React</span>
+          <span class="chip">Vite</span>
+          <span class="chip">dnd-kit</span>
+          <span class="chip">Framer Motion</span>
+        </div>
+        <div class="card-links">
+          <a href="https://jhwn223.github.io/MatchplanXI/" target="_blank" rel="noopener">Live demo →</a>
+          <a href="https://github.com/jhwn223/MatchplanXI" target="_blank" rel="noopener">View on GitHub</a>
+        </div>
+      </article>
+ 
+      <article class="card">
+        <div class="card-top">
+          <h3>Coursepic</h3>
+          <span class="tag">DEPLOYED</span>
+        </div>
+        <p class="sub">Plan a date course together with one invite link</p>
+        <p>
+          A collaborative web MVP for planning date courses. No sign-up needed: join a shared room
+          with a nickname and edit the course together in real time.
+        </p>
+        <div class="chips">
+          <span class="chip">Next.js</span>
+          <span class="chip">React</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">Supabase</span>
+          <span class="chip">PostgreSQL</span>
+          <span class="chip">Kakao Maps</span>
+          <span class="chip">Vercel</span>
+        </div>
+        <div class="card-links">
+          <a href="https://travel-szul.vercel.app" target="_blank" rel="noopener">Live demo →</a>
+          <span class="no-link">Repository private</span>
+        </div>
+      </article>
+    </div>
+ 
     <p class="see-all">
       <a href="https://github.com/jhwn223?tab=repositories" target="_blank" rel="noopener">See all repositories on GitHub →</a>
     </p>
   </div>
 </section>
-
+ 
 <section id="ongoing">
   <div class="wrap">
     <div class="sec-head">
       <span class="sec-num">03</span>
       <h2>In Progress</h2>
     </div>
-
+ 
     <article class="card">
       <div class="card-top">
-        <h3>Seoul Bike-Sharing Analysis</h3>
+        <h3>Facial Expression Model Audit</h3>
         <span class="tag">IN PROGRESS</span>
       </div>
-      <p class="sub">Predicting bike shortages in Seoul&rsquo;s public bike system (Ttareungi)</p>
+      <p class="sub">External audit of a public Hugging Face model</p>
       <p>
-        Combining 1.7 million rental records with weather data to diagnose where and when bikes run out,
-        map how riders move between stations, and predict shortages. Lag features and weather raised the
-        model&rsquo;s AUC from 0.66 to 0.73.
+        Evaluated a public facial expression classifier on external data without retraining. Most of the
+        low initial accuracy came from a preprocessing mismatch: changing only the input crop raised
+        accuracy from 22.6% to 45.3%.
+      </p>
+      <div class="chips">
+        <span class="chip">Python</span>
+        <span class="chip">Hugging Face</span>
+        <span class="chip">PyTorch</span>
+        <span class="chip">scikit-learn</span>
+        <span class="chip">OpenCV</span>
+        <span class="chip">Streamlit</span>
+      </div>
+      <div class="card-links">
+        <a href="https://github.com/jhwn223/facial-expression-analysis" target="_blank" rel="noopener">View on GitHub →</a>
+      </div>
+    </article>
+ 
+    <article class="card">
+      <div class="card-top">
+        <h3>Ttareungi</h3>
+        <span class="tag">IN PROGRESS</span>
+      </div>
+      <p class="sub">Predicting bike shortages in Seoul&rsquo;s public bike system</p>
+      <p>
+        Diagnosing and predicting station-level bike shortages using 1.7M rental records and weather data.
+        Lag and weather features improved AUC from 0.66 to 0.73.
       </p>
       <div class="chips">
         <span class="chip">Python</span>
@@ -584,28 +655,28 @@
         <span class="chip">scikit-learn</span>
       </div>
       <div class="card-links">
-        <a href="https://github.com/jhwn223/ttareungi-project" target="_blank" rel="noopener">View more on GitHub →</a>
+        <a href="https://github.com/jhwn223/ttareungi-project" target="_blank" rel="noopener">View on GitHub →</a>
       </div>
     </article>
   </div>
 </section>
-
+ 
 <section id="learning">
   <div class="wrap">
     <div class="sec-head">
       <span class="sec-num">04</span>
       <h2>Currently Learning</h2>
     </div>
-
+ 
     <article class="card">
       <div class="card-top">
         <h3>LIKELION</h3>
-        <span class="tag">2026.08 –</span>
+        <span class="tag">AUG 2026 –</span>
       </div>
-      <p class="sub">Data Analysis with SQL, Python and Tableau</p>
+      <p class="sub">Data Analysis with SQL, Python &amp; Tableau</p>
       <p>
-        A course covering the practical data analysis workflow in order — SQL for extraction, Python for
-        analysis, Tableau for visualization. Notes and exercises will be published to GitHub.
+        A hands-on course covering a practical analytics workflow from SQL to Python to Tableau.
+        Notes and exercises will be published to GitHub.
       </p>
       <div class="chips">
         <span class="chip">SQL</span>
@@ -615,7 +686,7 @@
     </article>
   </div>
 </section>
-
+ 
 <section id="contact">
   <div class="wrap">
     <div class="sec-head">
@@ -638,15 +709,16 @@
     </ul>
   </div>
 </section>
-
+ 
 </main>
-
+ 
 <footer>
   <div class="wrap">
     <span>© 2026 Jihwan Kim</span>
     <a href="https://github.com/jhwn223" target="_blank" rel="noopener">github.com/jhwn223</a>
   </div>
 </footer>
-
+ 
 </body>
 </html>
+ 
