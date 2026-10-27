@@ -1,0 +1,53 @@
+---
+title: "Jihwan (Juan) Kim"
+subtitle: "Aspiring Data Scientist"
+image: files/profile.png
+about:
+  template: jolla
+  image-shape: round
+  links:
+    - icon: github
+      text: GitHub
+      href: https://github.com/jhwn223
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/jihwan-juan-kim-12b15740b/
+    - icon: envelope
+      text: Email
+      href: mailto:kimjh050223@gmail.com
+    - icon: file-earmark-person
+      text: CV
+      href: cv.qmd
+toc: false
+---
+
+I'm a third-year undergraduate in the School of Software at Chung-Ang University in Seoul.
+
+I'm interested in using **statistics and data to support better decisions**:
+framing the right question, choosing a method that fits it, and turning the result
+into something people can act on. I plan to pursue a graduate degree in data science.
+
+On this site I write about my [projects](projects.qmd), with a focus on *why* I chose
+each method, what trade-offs I accepted, and what I learned from the results.
+
+### Education
+
+**Chung-Ang University**, Seoul, South Korea · School of Software · Third-year undergraduate
+
+### Currently learning
+
+**LIKELION** · Data Analysis with SQL, Python & Tableau · Aug 2026 –
+
+### Tech stack
+
+**Languages:** Python, Java, C (coursework)
+
+**Data analysis:** pandas, NumPy, PyArrow, Matplotlib
+
+**Machine learning:** scikit-learn, Hugging Face, model evaluation, calibration, feature engineering
+
+**Tools:** Jupyter, Streamlit, Git, GitHub
+
+### Contact
+
+Email: kimjh050223@gmail.com · GitHub: [github.com/jhwn223](https://github.com/jhwn223)

@@ -1,0 +1,34 @@
+---
+title: "Facial Expression Model Audit"
+description: "An external audit of a public Hugging Face facial expression classifier. Fixing a preprocessing mismatch alone doubled accuracy, from 22.6% to 45.3%."
+order: 1
+group: personal
+categories: [in progress, data science, model evaluation, Python]
+---
+
+::: {.callout-note appearance="simple"}
+**Status: in progress**
+:::
+
+| | |
+|---|---|
+| **Question** | How well does a public facial expression classifier work on data it was not trained on? |
+| **Approach** | Evaluate the model on external data **without retraining**, then diagnose where errors come from |
+| **Key finding** | Most of the low initial accuracy came from a preprocessing mismatch. Changing only the input crop raised accuracy from **22.6% to 45.3%**. |
+| **Tools** | Python, Hugging Face, PyTorch, scikit-learn, OpenCV, Streamlit |
+| **Code** | [github.com/jhwn223/facial-expression-analysis](https://github.com/jhwn223/facial-expression-analysis) |
+
+<!-- TODO: 내용을 채우면 이 주석을 지우세요.
+
+## Why this project
+
+왜 이 프로젝트를 시작했는지 1~2문단
+
+## Key decisions
+
+결정마다 블로그 글로 쓰고 여기에 링크하세요. 예:
+- Why I audited the model instead of retraining it
+- How I found that the input crop was the problem
+
+## What I learned
+-->

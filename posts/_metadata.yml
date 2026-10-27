@@ -1,0 +1,5 @@
+# Defaults applied to every post in this folder
+author: "Jihwan (Juan) Kim"
+freeze: true
+title-block-banner: false
+citation: false

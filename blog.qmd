@@ -1,0 +1,16 @@
+---
+title: "Blog"
+subtitle: "Analyses, experiments, and the reasoning behind my choices."
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: true
+  feed: true
+page-layout: full
+title-block-banner: false
+---
+
+First posts are on the way. Each one explains a decision from my [projects](projects.qmd): what I tried, what I chose, and why.

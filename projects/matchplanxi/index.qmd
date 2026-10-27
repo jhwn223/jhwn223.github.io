@@ -1,0 +1,23 @@
+---
+title: "MatchplanXI"
+description: "A 2026 World Cup tactics simulator. Manage any of the 48 national teams from the group stage to the final, then compare your results with the real tournament."
+order: 3
+group: team
+categories: [deployed, competition, web, TypeScript]
+---
+
+| | |
+|---|---|
+| **What it is** | A tactics simulator for the 2026 World Cup, built as a competition entry |
+| **Features** | Manage any of the 48 national teams from the group stage to the final, and compare your results with the real tournament |
+| **Tools** | TypeScript, React, Vite, dnd-kit, Framer Motion |
+| **Links** | [Live demo](https://jhwn223.github.io/MatchplanXI/) · [GitHub](https://github.com/jhwn223/MatchplanXI) |
+
+<!-- TODO: 내용을 채우면 이 주석을 지우세요.
+
+## Why this project
+
+## Key decisions
+
+## What I learned
+-->

@@ -1,0 +1,47 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Jihwan (Juan) Kim"
+  description: "Data science notes, experiments, and the reasoning behind them."
+  site-url: "https://jhwn223.github.io"
+  repo-url: "https://github.com/jhwn223/jhwn223.github.io"
+  open-graph: true
+  search: true
+  navbar:
+    left:
+      - text: About
+        href: index.qmd
+      - text: Blog
+        href: blog.qmd
+      - text: Projects
+        href: projects.qmd
+      - text: CV
+        href: cv.qmd
+    right:
+      - icon: github
+        href: https://github.com/jhwn223
+        aria-label: GitHub
+      - icon: linkedin
+        href: https://www.linkedin.com/in/jihwan-juan-kim-12b15740b/
+        aria-label: LinkedIn
+      - icon: rss
+        href: blog.xml
+        aria-label: RSS
+  page-footer:
+    center: "© 2026 Jihwan (Juan) Kim · Built with [Quarto](https://quarto.org)"
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+    css: styles.css
+    toc: true
+    code-copy: true
+    code-overflow: wrap
+    highlight-style: github
+
+execute:
+  freeze: auto

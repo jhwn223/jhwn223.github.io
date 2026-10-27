@@ -1,0 +1,35 @@
+---
+title: "Ttareungi: Predicting Bike Shortages"
+description: "Diagnosing and predicting station-level bike shortages in Seoul's public bike system with 1.7M rental records and weather data."
+order: 2
+group: personal
+categories: [in progress, data science, classification, Python]
+---
+
+::: {.callout-note appearance="simple"}
+**Status: in progress**
+:::
+
+| | |
+|---|---|
+| **Question** | Which Seoul public bike (Ttareungi) stations will run short of bikes, and when? |
+| **Data** | 1.7M rental records combined with weather data |
+| **Key finding** | Adding lag and weather features improved AUC from **0.66 to 0.73**. |
+| **Tools** | Python, pandas, PyArrow, scikit-learn |
+| **Code** | [github.com/jhwn223/ttareungi-project](https://github.com/jhwn223/ttareungi-project) |
+
+<!-- TODO: 내용을 채우면 이 주석을 지우세요.
+
+## Why this project
+
+왜 이 문제를 골랐는지
+
+## Key decisions
+
+예:
+- Why I framed shortage as a classification problem
+- Why AUC was the right metric here
+- Which lag and weather features helped, and why
+
+## What I learned
+-->

@@ -1,0 +1,15 @@
+/* Small tweaks on top of the cosmo / darkly themes */
+
+body {
+  line-height: 1.7;
+}
+
+/* Callout used for the "So what?" section at the end of each post */
+.callout.callout-style-default .callout-title {
+  font-weight: 600;
+}
+
+/* Keep figures from touching the text */
+.cell-output-display {
+  margin: 1.25rem 0;
+}

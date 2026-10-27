@@ -1,0 +1,36 @@
+---
+title: "Projects"
+listing:
+  - id: personal
+    contents: projects
+    include:
+      group: personal
+    sort: "order"
+    fields: [title, description, categories]
+    type: grid
+    grid-columns: 2
+  - id: team
+    contents: projects
+    include:
+      group: team
+    sort: "order"
+    fields: [title, description, categories]
+    type: grid
+    grid-columns: 2
+page-layout: full
+title-block-banner: false
+---
+
+## Personal Projects
+
+Self-directed data science projects, currently in progress.
+
+::: {#personal}
+:::
+
+## Competition & Club Projects
+
+Web projects built for a competition and a university club's industry project program.
+
+::: {#team}
+:::

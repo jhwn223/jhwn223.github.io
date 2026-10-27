@@ -1,0 +1,15 @@
+/.quarto/
+/_site/
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+# Note: _freeze/ is intentionally NOT ignored — commit it.
+
+**/*.quarto_ipynb
+
+# Local scratch folder
+_to_delete/
+# Temporary files left by quarto preview
+/blog_files/
+/index_files/

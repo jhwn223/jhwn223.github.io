@@ -1,0 +1,23 @@
+---
+title: "Coursepic"
+description: "A collaborative web MVP for planning a date course together through one invite link, with real-time editing and no sign-up."
+order: 4
+group: team
+categories: [deployed, club project, web, Next.js]
+---
+
+| | |
+|---|---|
+| **What it is** | A web MVP for planning a date course together, built in a university club's industry project program |
+| **Features** | No sign-up needed: join a shared room with a nickname and edit the course together in real time |
+| **Tools** | Next.js, React, JavaScript, Supabase, PostgreSQL, Kakao Maps, Vercel |
+| **Links** | [Live demo](https://travel-szul.vercel.app) · Repository private |
+
+<!-- TODO: 내용을 채우면 이 주석을 지우세요.
+
+## Why this project
+
+## Key decisions
+
+## What I learned
+-->
