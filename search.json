@@ -1,0 +1,100 @@
+[
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "First posts are on the way. Each one explains a decision from my projects: what I tried, what I chose, and why.\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Jihwan (Juan) Kim",
+    "section": "",
+    "text": "I’m a third-year undergraduate in the School of Software at Chung-Ang University in Seoul.\nI’m interested in using statistics and data to support better decisions: framing the right question, choosing a method that fits it, and turning the result into something people can act on. I plan to pursue a graduate degree in data science.\nOn this site I write about my projects, with a focus on why I chose each method, what trade-offs I accepted, and what I learned from the results.\n\nEducation\nChung-Ang University, Seoul, South Korea · School of Software · Third-year undergraduate\n\n\nCurrently learning\nLIKELION · Data Analysis with SQL, Python & Tableau · Aug 2026 –\n\n\nTech stack\nLanguages: Python, Java, C (coursework)\nData analysis: pandas, NumPy, PyArrow, Matplotlib\nMachine learning: scikit-learn, Hugging Face, model evaluation, calibration, feature engineering\nTools: Jupyter, Streamlit, Git, GitHub\n\n\nContact\nEmail: kimjh050223@gmail.com · GitHub: github.com/jhwn223"
+  },
+  {
+    "objectID": "projects/coursepic/index.html",
+    "href": "projects/coursepic/index.html",
+    "title": "Coursepic",
+    "section": "",
+    "text": "What it is\nA web MVP for planning a date course together, built in a university club’s industry project program\n\n\nFeatures\nNo sign-up needed: join a shared room with a nickname and edit the course together in real time\n\n\nTools\nNext.js, React, JavaScript, Supabase, PostgreSQL, Kakao Maps, Vercel\n\n\nLinks\nLive demo · Repository private"
+  },
+  {
+    "objectID": "projects/ttareungi/index.html",
+    "href": "projects/ttareungi/index.html",
+    "title": "Ttareungi: Predicting Bike Shortages",
+    "section": "",
+    "text": "Status: in progress\n\n\n\n\n\n\nQuestion\nWhich Seoul public bike (Ttareungi) stations will run short of bikes, and when?\n\n\nData\n1.7M rental records combined with weather data\n\n\nKey finding\nAdding lag and weather features improved AUC from 0.66 to 0.73.\n\n\nTools\nPython, pandas, PyArrow, scikit-learn\n\n\nCode\ngithub.com/jhwn223/ttareungi-project"
+  },
+  {
+    "objectID": "projects/facial-expression-audit/index.html",
+    "href": "projects/facial-expression-audit/index.html",
+    "title": "Facial Expression Model Audit",
+    "section": "",
+    "text": "Status: in progress\n\n\n\n\n\n\nQuestion\nHow well does a public facial expression classifier work on data it was not trained on?\n\n\nApproach\nEvaluate the model on external data without retraining, then diagnose where errors come from\n\n\nKey finding\nMost of the low initial accuracy came from a preprocessing mismatch. Changing only the input crop raised accuracy from 22.6% to 45.3%.\n\n\nTools\nPython, Hugging Face, PyTorch, scikit-learn, OpenCV, Streamlit\n\n\nCode\ngithub.com/jhwn223/facial-expression-analysis"
+  },
+  {
+    "objectID": "projects/matchplanxi/index.html",
+    "href": "projects/matchplanxi/index.html",
+    "title": "MatchplanXI",
+    "section": "",
+    "text": "What it is\nA tactics simulator for the 2026 World Cup, built as a competition entry\n\n\nFeatures\nManage any of the 48 national teams from the group stage to the final, and compare your results with the real tournament\n\n\nTools\nTypeScript, React, Vite, dnd-kit, Framer Motion\n\n\nLinks\nLive demo · GitHub"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Self-directed data science projects, currently in progress.\n\n\n\n\n\n\n\n\n\nin progress\n\ndata science\n\nmodel evaluation\n\nPython\n\n\n\nAn external audit of a public Hugging Face facial expression classifier. Fixing a preprocessing mismatch alone doubled accuracy, from 22.6% to 45.3%.\n\n\n\n\n\n\n\n\n\n\n\nin progress\n\ndata science\n\nclassification\n\nPython\n\n\n\nDiagnosing and predicting station-level bike shortages in Seoul’s public bike system with 1.7M rental records and weather data.\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects.html#personal-projects",
+    "href": "projects.html#personal-projects",
+    "title": "Projects",
+    "section": "",
+    "text": "Self-directed data science projects, currently in progress.\n\n\n\n\n\n\n\n\n\nin progress\n\ndata science\n\nmodel evaluation\n\nPython\n\n\n\nAn external audit of a public Hugging Face facial expression classifier. Fixing a preprocessing mismatch alone doubled accuracy, from 22.6% to 45.3%.\n\n\n\n\n\n\n\n\n\n\n\nin progress\n\ndata science\n\nclassification\n\nPython\n\n\n\nDiagnosing and predicting station-level bike shortages in Seoul’s public bike system with 1.7M rental records and weather data.\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects.html#competition-club-projects",
+    "href": "projects.html#competition-club-projects",
+    "title": "Projects",
+    "section": "Competition & Club Projects",
+    "text": "Competition & Club Projects\nWeb projects built for a competition and a university club’s industry project program.\n\n\n\n\n\n\n\nMatchplanXI\n\n\n\ndeployed\n\ncompetition\n\nweb\n\nTypeScript\n\n\n\nA 2026 World Cup tactics simulator. Manage any of the 48 national teams from the group stage to the final, then compare your results with the real tournament.\n\n\n\n\n\n\n\n\n\nCoursepic\n\n\n\ndeployed\n\nclub project\n\nweb\n\nNext.js\n\n\n\nA collaborative web MVP for planning a date course together through one invite link, with real-time editing and no sign-up.\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "CV",
+    "section": "",
+    "text": "Jihwan (Juan) Kim · Seoul, South Korea kimjh050223@gmail.com · github.com/jhwn223 · LinkedIn"
+  },
+  {
+    "objectID": "cv.html#education",
+    "href": "cv.html#education",
+    "title": "CV",
+    "section": "Education",
+    "text": "Education\nChung-Ang University, Seoul, South Korea School of Software · Third-year undergraduate (expected graduation: [20XX])"
+  },
+  {
+    "objectID": "cv.html#training",
+    "href": "cv.html#training",
+    "title": "CV",
+    "section": "Training",
+    "text": "Training\nLIKELION, Data Analysis with SQL, Python & Tableau · Aug 2026 –"
+  },
+  {
+    "objectID": "cv.html#projects",
+    "href": "cv.html#projects",
+    "title": "CV",
+    "section": "Projects",
+    "text": "Projects\nPersonal projects (data science)\n\nFacial Expression Model Audit (in progress) — Audited a public Hugging Face facial expression classifier on external data without retraining. Found that a preprocessing mismatch caused most errors; changing only the input crop raised accuracy from 22.6% to 45.3%.\nTtareungi: Predicting Bike Shortages (in progress) — Predicting station-level shortages in Seoul’s public bike system from 1.7M rental records and weather data. Lag and weather features improved AUC from 0.66 to 0.73.\n\nCompetition & club projects (web)\n\nMatchplanXI — Competition entry. 2026 World Cup tactics simulator covering all 48 national teams. TypeScript, React, Vite.\nCoursepic — University club industry project. Real-time collaborative date-course planner with no sign-up. Next.js, Supabase, Kakao Maps."
+  },
+  {
+    "objectID": "cv.html#skills",
+    "href": "cv.html#skills",
+    "title": "CV",
+    "section": "Skills",
+    "text": "Skills\n\nLanguages: Python, Java, C (coursework)\nData analysis: pandas, NumPy, PyArrow, Matplotlib\nMachine learning: scikit-learn, Hugging Face; model evaluation, calibration, feature engineering\nTools: Jupyter, Streamlit, Git, GitHub"
+  }
+]

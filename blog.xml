@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Jihwan (Juan) Kim</title>
+<link>https://jhwn223.github.io/blog.html</link>
+<atom:link href="https://jhwn223.github.io/blog.xml" rel="self" type="application/rss+xml"/>
+<description>Data science notes, experiments, and the reasoning behind them.</description>
+<generator>quarto-1.10.19</generator>
+<lastBuildDate>Tue, 27 Oct 2026 08:29:59 GMT</lastBuildDate>
+</channel>
+</rss>
